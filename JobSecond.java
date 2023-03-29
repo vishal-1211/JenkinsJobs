@@ -1,3 +1,5 @@
+import java.io.InputStream;
+
 public class JobSecond {
 
 	public static void main(String[] args) {
