@@ -4,8 +4,9 @@ public class JobThird {
 
 	public static void main(String[] args) {
 	  try {
-		System.out.println("Shared Library Test Case 1 Triggered...");
-		System.out.println("Shared Library Test Case 9 Triggered...");
+		System.out.println("IQE-T4 Triggered...");
+		System.out.println("IQE-T2 Triggered...");
+		System.out.println("IQE-T1 Triggered...");
 		
 		Process proc = Runtime.getRuntime().exec("java -jar HeadlessAutomationJar.jar");
 		proc.waitFor();
