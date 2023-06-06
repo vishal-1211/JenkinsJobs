@@ -4,8 +4,9 @@ public class JobFirst {
 
 	public static void main(String[] args) {
 	  try {
-		for(String str : args ) {
-		  System.out.println(str + " Triggered ... "); 
+		String[] testcases = args[0].split(",");
+		for (String str : testcases) {
+		   System.out.println(str + " Triggered ... ");
 		}
 		
 		Process proc = Runtime.getRuntime().exec("java -jar HeadlessAutomationJar.jar");
