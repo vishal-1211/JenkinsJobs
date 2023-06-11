@@ -22,6 +22,14 @@ public class JobFirst {
 		byte c[]=new byte[err.available()];
 		err.read(c,0,c.length);
 		System.out.println(new String(c));
+		  
+		for (int i = 0; i < args.length; i++) {
+		  if (i == args.length - 1) {
+		    System.out.println(args[i] + " Failed ...");
+		  } else {
+		    System.out.println(args[i] + " Succeeded ...");
+		  }
+		}  
 	  } catch (Exception e ) {
 		e.printStackTrace();
 	  }		
