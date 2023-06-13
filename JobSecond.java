@@ -4,9 +4,10 @@ public class JobSecond {
 
 	public static void main(String[] args) {
 	  try {
-		System.out.println("IQE-T4 Triggered...");
-		System.out.println("IQE-T2 Triggered...");
-		System.out.println("IQE-T1 Triggered...");
+		String[] testcases = args[0].split(",");
+		for (String str : testcases) {
+		   System.out.println(str + " Test cases execution started ... ");
+		}
 		
 		Process proc = Runtime.getRuntime().exec("java -jar HeadlessAutomationJar.jar");
 		proc.waitFor();
@@ -21,6 +22,8 @@ public class JobSecond {
 		byte c[]=new byte[err.available()];
 		err.read(c,0,c.length);
 		System.out.println(new String(c));
+		  
+		
 	  } catch (Exception e ) {
 		e.printStackTrace();
 	  }		
